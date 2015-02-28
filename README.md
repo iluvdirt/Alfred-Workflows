@@ -47,6 +47,10 @@ Tracklist of current playlist is output in a notification (limited to 10 items)
 
 Change notification to only show songs that have not been played in playlist
 
+**Random Section**
+
+This section requires `coreutils` from Homebrew. 
+
 **Lyrics Section**
 
 I'd mostly ignore this section. I wrote it up when ncmpcpp's lyrics function wasn't working for me, but the problem has since been fixed and lyrics work properly in ncmpcpp making this pretty useless since it's not as good.
