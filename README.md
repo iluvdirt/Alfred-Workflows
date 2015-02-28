@@ -61,7 +61,11 @@ For this section be sure to set the search scope to wherever your music files ar
 
 *Instructions*
 
-For this to work as intended, add a tag entitled "Artists" to all Artist folders in directory. Assuming all Artist folders are at the same folder depth cmd+a -> right click -> Tags... -> "Artists" -> Enter. This will tag all your folders to be compatible with the workflow. I use [Hazel](http://www.noodlesoft.com/hazel.php) to automate this tagging process.
+For this to work as intended, add a tag entitled "Artists" to all Artist folders in directory. Assuming all Artist folders are at the same folder depth cmd+a -> right click -> Tags... -> "Artists" -> Enter.
+
+![](http://i.imgur.com/blRldH4.png)
+
+This will tag all your folders to be compatible with the workflow. I use [Hazel](http://www.noodlesoft.com/hazel.php) to automate this tagging process.
 
 If you don't want to do tags this section will still work, Artist folders will just show up in Album searches and vice versa.
 
