@@ -73,6 +73,10 @@ This will tag all your folders to be compatible with the workflow. I use [Hazel]
 
 If you don't want to do tags this section will still work, Artist folders will just show up in Album searches and vice versa.
 
+*Notes*
+
+Press shift when adding an Artist / Album to clear current playlist first. Default action appends album to current playlist.
+
 **To Listen Section**
 
 `Under Construction`
