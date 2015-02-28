@@ -25,39 +25,45 @@ This workflow assumes you have mpd+ncmpcpp installed in `/usr/local/bin/` (defau
 
 This section assumes you have followed instructions [here](http://www.reddit.com/r/osx/comments/21dp3w/anyone_looking_for_a_good_command_line_music/cgcixe7) to use [Karabiner](https://pqrs.org/osx/karabiner/) to change the function of your media keys.
 
-*Known Issues*
-
-~~I can't quite get the notification for F8 to work. It seems there's a delay in the process, so when it checks if the song is playing it's not always correct. Any help here would be great.~~ 
-(Fixed - script now waits 0.01 seconds before executing and that seems to have solved the problem without a (noticable) delay in notification)
+This section allows you to control playback of mpd+ncmpcpp with your media keys.
 
 **Now Playing Notification**
 
-*To Do*
+This section outputs a notification in the following format
+
+![](http://i.imgur.com/wUS29Wo.png)
+
+*Maybe To Do*
 
 Have track number position (*i.e.(#2/13)*) identify number in album as opposed to position in entire playlist
 
 **Playlist Section**
 
+Tracklist of current playlist is output in a notification (limited to 10 items)
+
+![](http://i.imgur.com/e8Sj89D.png)
+
 *To Do*
 
-~~Determine notification function when playlist is too large to display in entirety. Likely limit to a certain number of lines~~ 
-(Script now limits output to 10 items)
+Change notification to only show songs that have not been played in playlist
 
 **Lyrics Section**
 
 I'd mostly ignore this section. I wrote it up when ncmpcpp's lyrics function wasn't working for me, but the problem has since been fixed and lyrics work properly in ncmpcpp making this pretty useless since it's not as good.
 
-*Maybe To Do*
+*Pretty Unlikely To Do*
 
 Implement similar functionality to ncmpcpp's lyric fetch involving multiple databases and local search
 
 **Add Album / Add Artist Section**
 
-For this section be sure to set the search scope to wherever your music files are located. File type should be public.folder.
+For this section be sure to set the search scope to wherever your music files are located. File type should be public.folder (drag a folder into File Type area).
 
-*Known Issues*
+*Instructions*
 
-I'm not sure how to set the depth of the scope. The result being that artists will show up in an album search and vice versa. I haven't had much time to search for a fix on this, but if anyone has an idea please let me know.
+For this to work as intended, add a tag entitled "Artists" to all Artist folders in directory. Assuming all Artist folders are at the same folder depth cmd+a -> right click -> Tags... -> "Artists" -> Enter. This will tag all your folders to be compatible with the workflow. I use [Hazel](http://www.noodlesoft.com/hazel.php) to automate this tagging process.
+
+If you don't want to do tags this section will still work, Artist folders will just show up in Album searches and vice versa.
 
 **To Listen Section**
 
