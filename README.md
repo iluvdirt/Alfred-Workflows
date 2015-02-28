@@ -39,7 +39,7 @@ Have track number position (*i.e.(#2/13)*) identify number in album as opposed t
 
 *To Do*
 
-~~Determine notification function when playlist is too large to display in entirety. Likely limit to a certain number of lines~~ (Script now limits output to 8 items)
+~~Determine notification function when playlist is too large to display in entirety. Likely limit to a certain number of lines~~ (Script now limits output to 10 items)
 
 **Lyrics Section**
 
