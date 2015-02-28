@@ -51,6 +51,10 @@ Change notification to only show songs that have not been played in playlist
 
 This section requires `coreutils` from Homebrew. 
 
+*To Do*
+
+Notification for which random albums were added
+
 **Lyrics Section**
 
 I'd mostly ignore this section. I wrote it up when ncmpcpp's lyrics function wasn't working for me, but the problem has since been fixed and lyrics work properly in ncmpcpp making this pretty useless since it's not as good.
