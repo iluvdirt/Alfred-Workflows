@@ -27,7 +27,8 @@ This section assumes you have followed instructions [here](http://www.reddit.com
 
 *Known Issues*
 
-I can't quite get the notification for F8 to work. It seems there's a delay in the process, so when it checks if the song is playing it's not always correct. Any help here would be great.
+~~I can't quite get the notification for F8 to work. It seems there's a delay in the process, so when it checks if the song is playing it's not always correct. Any help here would be great.~~ 
+(Fixed - script now waits 0.01 seconds before executing and that seems to have solved the problem without a (noticable) delay in notification)
 
 **Now Playing Notification**
 
@@ -39,7 +40,8 @@ Have track number position (*i.e.(#2/13)*) identify number in album as opposed t
 
 *To Do*
 
-~~Determine notification function when playlist is too large to display in entirety. Likely limit to a certain number of lines~~ (Script now limits output to 10 items)
+~~Determine notification function when playlist is too large to display in entirety. Likely limit to a certain number of lines~~ 
+(Script now limits output to 10 items)
 
 **Lyrics Section**
 
