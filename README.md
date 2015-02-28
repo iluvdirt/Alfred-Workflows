@@ -15,7 +15,7 @@ This workflow assumes you have mpd+ncmpcpp installed in `/usr/local/bin/` (defau
 *	Add album to playlist
 *	Add all albums of an artist to playlist
 
-![](http://goput.it/v/44d.gif)
+![](http://goput.it/44d.gif)
 
 ###Notes
 **F7, F8, F9 Section**
