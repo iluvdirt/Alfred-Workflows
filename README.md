@@ -15,7 +15,6 @@ This workflow assumes you have mpd+ncmpcpp installed in `/usr/local/bin/` (defau
 *	Add album to playlist
 *	Add all albums of an artist to playlist
 
-![](http://goput.it/44d.gif)
 
 ###Notes
 **F7, F8, F9 Section**
@@ -31,7 +30,7 @@ This section allows you to control playback of mpd+ncmpcpp with your media keys.
 
 This section outputs a notification in the following format
 
-![](http://i.imgur.com/wUS29Wo.png)
+![](http://i.imgur.com/kIg5wkU.png)
 
 *Maybe To Do*
 
@@ -46,10 +45,6 @@ Next 10 songs in playlist are output in a notification.
 **Random Section**
 
 This section requires `coreutils` from Homebrew. 
-
-*To Do*
-
-Notification for which random albums were added
 
 **Lyrics Section**
 
@@ -71,13 +66,37 @@ If you don't want to do tags this section will still work, Artist folders will j
 
 *Notes*
 
-Press shift when adding an Artist / Album to clear current playlist first. Default action appends album to current playlist.
+Pressing shift when adding an Artist / Album will append it to the playlist. Default action clears the playlist then adds the Artist / Album.
 
 **To Listen Section**
 
-`Under Construction`
+![](http://i.imgur.com/m54Z4yw.png)
 
-This section is nowhere close to completed. The idea is to search a 'To Listen' folder for albums you want to listen to. It'd then add the albums to both iTunes and mpd+ncmpcpp. I haven't had time to work on this as I'm currently auditing my current music library and have deleted all albums from iTunes. Check back in the summer when I have more time to work on this kind of stuff.
+*Prerequisites* 
+
+The folders in your "To Listen" folder must have the following naming format: *Artist - Album*
+
+Your music directory must be organized in the following structure: *Music Directory/Artist/Artist's Albums/Album's Songs* (If this is unclear, the folder structure I'm attempting to describe is the same that is set by default if you use iTunes to organize your library)
+
+*Setup*
+
+Set your "To Listen" directory by clicking the "Browse in Alfred" button on the top right. Also, be sure to edit the music directory set in the bash script.
+
+*Usuage*
+
+Press the Hotkey assigned to the "Browse in Alfred" button.
+
+Navigate to the album you would like to add and press the right-arrow key on your keyboard.
+
+Navigate to the file action that says "Add Album" and hit enter.
+
+*How it works*
+
+When the script is run it does the following:
+
+Checks the Artist name of the folder you are adding and sees if that Artist already exists in your music directory. If it does, then it will rename the folder to the Album name and move it to the Artist folder. If it does not, it will create a new Artist folder in your music directory then place the Album folder in it. Once this is completed the script updates your mpd library, clears the current playlist, creates a new one with the album you just added, and starts playing.
+
+![](http://www.gfycat.com/ShowyUntidyFlycatcher)
 
 ***
 ```
