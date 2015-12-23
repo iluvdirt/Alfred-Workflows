@@ -96,7 +96,7 @@ When the script is run it does the following:
 
 Checks the Artist name of the folder you are adding and sees if that Artist already exists in your music directory. If it does, then it will rename the folder to the Album name and move it to the Artist folder. If it does not, it will create a new Artist folder in your music directory then place the Album folder in it. Once this is completed the script updates your mpd library, clears the current playlist, creates a new one with the album you just added, and starts playing.
 
-![](http://www.gfycat.com/ShowyUntidyFlycatcher)
+![](https://fat.gfycat.com/ShowyUntidyFlycatcher.gif)
 
 ***
 ```
